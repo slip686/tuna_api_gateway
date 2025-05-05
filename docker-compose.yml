@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  tuna_api_gateway:
+    image: ghcr.io/slip686/tuna_api_gateway:latest
+    container_name: tuna_api_gateway
+    restart: always
+    environment:
+      - EVENTS_GATEWAY_HOST=0.0.0.0
+      - EVENTS_GATEWAY_PORT=3065
+      - API_PORT=3070
+    ports:
+      - "3070:3070"

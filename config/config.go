@@ -31,7 +31,7 @@ func MakeNewConfig() *ConfigType {
 	Config = ConfigType{
 		API: APIGatewayConfig{
 			APIPort:           getEnvAsInt("API_PORT", 0),
-			EventsGatewayPort: getEnvAsInt("GITHUB_API_KEY", 0),
+			EventsGatewayPort: getEnvAsInt("EVENTS_GATEWAY_PORT", 0),
 			EventsGatewayHost: getEnv("EVENTS_GATEWAY_HOST", "0.0.0.0"),
 		},
 	}

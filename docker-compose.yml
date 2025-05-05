@@ -6,7 +6,7 @@ services:
     container_name: tuna_api_gateway
     restart: always
     environment:
-      - EVENTS_GATEWAY_HOST=0.0.0.0
+      - EVENTS_GATEWAY_HOST=events-gateway.sliplab.net
       - EVENTS_GATEWAY_PORT=3065
       - API_PORT=3070
     ports:
